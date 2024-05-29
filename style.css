@@ -1,0 +1,307 @@
+/* Raleway & Open Sans Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* Variables */
+:root {
+  --head-font: "Raleway", sans-serif;
+  --body-font: "Open Sans", sans-serif;
+  --text-bg-color: hsl(243, 87%, 12%);
+  --button-bg-color: hsl(224, 93%, 58%);
+  --button-hover-bg-color: hsl(224, 93%, 68%);
+  --input-and-placeholder-color: hsl(0, 0%, 75%);
+  --section-bg-color: hsl(240, 75%, 98%);
+  --link-color: hsl(170, 45%, 43%);
+  --link-color-hover: hsl(171, 55%, 66%);
+  --CTA-bg-color: hsl(238, 22%, 44%);
+  --footer-bg-color: hsl(243, 87%, 12%);
+}
+
+/* General Style */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+  font-size: 1.8rem;
+  font-family: var(--body-font);
+  color: var(--text-bg-color);
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  /* max-width: 100%; */
+}
+
+/* Buttons */
+
+.btn-custom-hero {
+  font-size: 1.6rem;
+  padding: 1rem 2rem;
+  background-color: var(--button-bg-color);
+}
+
+.btn-custom-subscription {
+  padding: 1rem 2rem;
+  font-size: 1.6rem;
+  background-color: var(--button-bg-color);
+}
+
+.btn-custom-hero:hover,
+.btn-custom-subscription:hover {
+  background-color: var(--button-hover-bg-color);
+}
+
+/* Fylo Landing Page */
+
+.header,
+.features-section,
+.footer-section {
+  padding: 6rem 0;
+}
+
+/* Nav Section */
+
+.nav-links {
+  gap: 4rem;
+}
+
+.nav-link {
+  color: var(--text-bg-color);
+}
+
+/* Hero Section */
+
+.header-hero-section {
+  font-family: var(--head-font);
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 150%;
+  margin-bottom: 2rem;
+}
+
+.paragraph-hero-section {
+  max-width: 90%;
+  line-height: 150%;
+  margin-bottom: 2rem;
+}
+
+.features-section {
+  background-color: var(--section-bg-color);
+}
+
+.email-holder {
+  border: 1px solid var(--input-and-placeholder-color);
+  padding: 1rem;
+  outline-color: var(--text-bg-color);
+  border-radius: 4px;
+}
+
+.email-holder::placeholder {
+  font-size: 1.8rem;
+  color: var(--input-and-placeholder-color);
+}
+
+/* Features Section */
+
+.bg-curve {
+  width: 2000px;
+}
+
+.header-features-section {
+  font-family: var(--head-font);
+  font-size: 3.8rem;
+  font-weight: 700;
+  line-height: 150%;
+  margin-bottom: 2rem;
+}
+
+.link {
+  max-width: 30%;
+  line-height: 200%;
+  margin-bottom: 5rem;
+  border-bottom: 1px solid var(--link-color);
+}
+
+.link:hover {
+  opacity: 0.8;
+}
+.link a {
+  color: var(--link-color);
+}
+
+.link a:hover {
+  color: var(--link-color-hover);
+}
+.link img {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+}
+
+.features-card {
+  max-width: 35rem;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  padding: 3rem;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.features-card img {
+  margin-bottom: 1.5rem;
+}
+
+.features-card p {
+  font-size: 1.4rem;
+  line-height: 160%;
+  margin-bottom: 2rem;
+}
+
+.card-author {
+  gap: 1rem;
+}
+
+.card-author img {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+}
+
+.card-author-text {
+  width: 100%;
+}
+.card-author-text h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.card-author-text p {
+  font-size: 1rem;
+}
+
+/* CTA Section */
+
+.cta-section {
+  padding: 8rem 0;
+  background-color: var(--CTA-bg-color);
+}
+
+.header-cta-section {
+  font-family: var(--head-font);
+  font-size: 3.5rem;
+  font-weight: 600;
+  line-height: 150%;
+  margin-bottom: 2rem;
+  color: var(--section-bg-color);
+}
+
+.paragraph-cta-section {
+  max-width: 80%;
+  color: var(--section-bg-color);
+  font-weight: 400;
+}
+
+/* Footer Section */
+
+.footer-section {
+  background-color: var(--footer-bg-color);
+}
+
+.footer-section a {
+  color: var(--section-bg-color);
+  font-weight: 400;
+  transition: all 0.3s ease-in-out;
+}
+
+.footer-section a:hover {
+  color: var(--button-hover-bg-color);
+}
+
+.footer-links i {
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  font-size: 1.6rem;
+  padding: 1.3rem;
+  width: 4.2rem;
+  height: 4.2rem;
+  border-radius: 50%;
+  border: 1px solid #fff;
+}
+
+.footer-links i:hover {
+  color: var(--link-color-hover);
+  border: 1px solid var(--link-color-hover);
+}
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+  .header,
+  .hero,
+  .features-section,
+  .cta-section,
+  .footer-section {
+    padding: 4rem;
+  }
+
+  .header img {
+    width: 12rem;
+  }
+
+  .nav-links {
+    gap: 2rem;
+  }
+
+  .nav-links a {
+    font-size: 1.6rem;
+  }
+
+  .hero-content h1 {
+    font-size: 3.5rem;
+  }
+
+  .paragraph-hero-section {
+    max-width: 100%;
+    font-size: 2rem;
+  }
+
+  .link {
+    max-width: 50%;
+    margin: 0 auto 6rem;
+    text-align: center;
+  }
+
+  .features-card {
+    max-width: 100%;
+  }
+
+  .header-cta-section {
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .paragraph-cta-section {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .email-container {
+    margin-bottom: 1rem;
+  }
+
+  .btn-custom-subscription {
+    width: 100%;
+  }
+}
